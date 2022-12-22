@@ -1,0 +1,131 @@
+Server Creation
+===============
+
+install express-npm i express
+
+1.import express
+
+2.create an app using express
+
+3.create port number (3000)
+
+4.Create requests according to our projects
+
+
+
+nodemon Server
+==============
+
+-npm -i -g nodemon
+
+
+User Authentication using expres
+================================
+JWT(json Web Token)
+
+jsonwebtoken    -library    npm i jsonwebtoken
+sign()           -method used for generate token
+verify()         -method to verify jwt tokens
+
+
+Middlewares
+===========
+-Middlewares have the capacity to control server request
+-its a function with three arguments    (req,res,next)
+
+-two types
+    1.Application Specific Middlewares
+    2.Router specific middleware
+
+Solving Runtime Error in json
+=============================
+try catch
+
+try{
+    error causing code
+}
+
+catch{
+    solution
+}
+
+
+MongoDB
+========
+-mongodb server
+-shell commands in mongodb 
+
+    -to see the databases
+
+        -> show dbs
+
+        
+    -open databases
+
+        -> use database_name
+
+
+
+    -view collections inside database_name
+
+        ->show collections
+
+
+
+    -to view datas inside collections
+
+        ->db.collection_name.find()
+    
+
+    -to view any single data inside collections
+
+        ->db.collection_name.findOne({unique data to identify})
+
+    
+
+    -to insert new data
+
+        ->db.collection_name.insertOne({data})
+
+
+    -to view any single data accordig to a condition
+
+        ->db.collection_name.findOne({condition}) single data 
+        ->db.collection_name.find({condition})     all data
+
+
+ -delete
+    
+    -delete single data
+
+        ->db.collection_name.deleteOne({data})
+        
+        -delete count=number 
+        -delete count=0     if nothing deleted
+
+-update
+
+        ->db.collection_name.updateOne({data to be update},{new data0-0})
+
+
+
+
+    Server MongoDB integration
+    ===========================
+
+    -mongoose       -library used to integrate db and server
+
+    npm i mongoose
+
+
+    STEPS
+    ------
+    //server mongo db integration
+
+    //1.import mongoose
+
+    //2.state connection string via mongoose
+
+    //3.define a bankdatabase model
+
+    //4.export the schema to use in another files
